@@ -27,6 +27,9 @@
             ?>
         </form>
     </section>
+    <footer>
+        <p>&copy; 2023 YPN. Tous droits réservés.</p>
+    </footer>
 </body>
 
 </html>
