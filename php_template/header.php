@@ -24,7 +24,9 @@
                         if ($userRole == 'communication') {
                             echo '<li><a href="../Communication.php">Pôle Communication</a></li>';
                         }
-                        echo '<li><a href="../logout.php">deconnexion</a></li>';
+                        echo "<li><a href=\"../logout.php\">Logout</a></li>
+                        <li><a href=\"../index.php\">Accueil</a></li>
+                        <li><a href=\"../propos.php\">À propos</a></li>";
                     }
                 }else{
                     echo 
