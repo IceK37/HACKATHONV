@@ -1,5 +1,4 @@
 <?php
-require_once 'dbSetting.php';
 session_start();
 if (isset($_POST['username']) && isset($_POST['password'])) {
   $re = new Login(); // Create a new Login object
