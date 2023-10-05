@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.container-home {
+    background-image: url("background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: back;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    min-height: calc(100vh - 100px);
+  }
+  @keyframes back {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(1800deg);
+    }
+  }
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    height: 50px;
+}
+
+.menu-container {
+    display: flex; 
+    justify-content: center; /
+}
+
+header h1 {
+    margin: 0;
+    padding-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h2 {
+    font-size: 24px;
+    color: #000;    
+    margin-bottom: 20px; 
+}
+
+.menu-block {
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo-ynov-container {
+    padding: 28px; 
+}
+.menu-block img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom: 10px;
+}
+
+.menu-block p {
+    font-size: 16px;
+    margin: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    height: 50px;
+}
+
+.contact-card-bloc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-card {
+    flex: 1;
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin: 0 5px; 
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-card h3 {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.contact-card p {
+    margin: 0;
+}
+
+.contact-card a {
+    text-decoration: none;
+    color: #0078d4;
+    font-weight: bold;
+}
+
+.menu-block {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
