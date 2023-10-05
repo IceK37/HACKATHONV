@@ -24,11 +24,7 @@
                         if ($userRole == 'communication') {
                             echo '<li><a href="../Communication.php">Pôle Communication</a></li>';
                         }
-                        echo "<user>
-                        <a href=\"../logout.php\">
-                        <img src=\"https://cdn-icons-png.flaticon.com/512/992/992680.png\">
-                        </a>
-                        </user>";
+                        echo '<li><a href="../logout.php">deconnexion</a></li>';
                     }
                 }else{
                     echo 

@@ -41,11 +41,6 @@ header {
     padding: 10px 0;
     height: 50px;
 }
-header right content user img {
-    height: 5px;
-    width: 5px;
-    border-radius: 10px;
-  }
 
 .menu-container {
     display: flex; 
