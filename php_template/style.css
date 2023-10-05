@@ -240,3 +240,8 @@ footer {
     font-weight: bold;
     cursor: pointer;
   }
+  header right content user img {
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+  }

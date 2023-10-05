@@ -19,11 +19,26 @@
                         $userRole = $_SESSION['role'];
                         if ($userRole == 'developpement') {
                             echo '<li><a href="../dev.php">Pôle Dev</a></li>';
+                            
                         }
                         if ($userRole == 'communication') {
                             echo '<li><a href="../Communication.php">Pôle Communication</a></li>';
                         }
+                        echo "<user>
+                        <a href=\"../function/logout.php\">
+                        <img src=\"https://cdn-icons-png.flaticon.com/512/992/992680.png\">
+                        </a>
+                        </user>";
                     }
+                }else{
+                    echo "
+                   <a href=\"../php_template/RegisterHtml.php\">
+                   <input type=\"button\" value=\"Sign up\">
+                   </a>
+                   <a href=\"../php_template/loginHtml.php\">
+                   <input type=\"button\" value=\"Login\">
+                   </a>";
+                   
                 }
                 ?>
                 <li><a href="../index.php">Accueil</a></li>
