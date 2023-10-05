@@ -25,25 +25,18 @@
                             echo '<li><a href="../Communication.php">Pôle Communication</a></li>';
                         }
                         echo "<user>
-                        <a href=\"..logout.php\">
+                        <a href=\"../logout.php\">
                         <img src=\"https://cdn-icons-png.flaticon.com/512/992/992680.png\">
                         </a>
                         </user>";
                     }
                 }else{
-                    echo "
-                   <a href=\"../php_template/RegisterHtml.php\">
-                   <input type=\"button\" value=\"Sign up\">
-                   </a>
-                   <a href=\"../php_template/loginHtml.php\">
-                   <input type=\"button\" value=\"Login\">
-                   </a>";
-                   
+                    echo 
+                    "<li><a href=\"../index.php\">Accueil</a></li>'
+                    <li><a href=\"../loginHtml.php\">Login</a></li>
+                    <li><a href=\"../propos.php\">À propos</a></li>";
                 }
                 ?>
-                <li><a href="../index.php">Accueil</a></li>
-                <li><a href="../loginHtml.php">Login</a></li>
-                <li><a href="../propos.php">À propos</a></li>
             </ul>
         </div>
     </nav>
