@@ -12,7 +12,7 @@
     include "header.php" ?>
     <section class="login-register-container">
 
-        <form action="../function/login.php" method="POST" id="login-form" class="login-register-form">
+        <form action="../login.php" method="POST" id="login-form" class="login-register-form">
             <h1>Login</h1>
             <input class="login-register-input" type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
             <input class="login-register-input" type="password" placeholder="Entrer le mot de passe" name="password" required>

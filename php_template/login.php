@@ -5,7 +5,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
   $re = new Login(); // Create a new Login object
   $re->login(); // Call the login function
 }else {
-  header('Location: ../php_template/loginHtml.php');
+  header('Location: ../loginHtml.php');
   exit();
 }
 
@@ -52,15 +52,15 @@ Class Login
                     $_SESSION['username'] = $username;// Set the session username variable
                     $_SESSION['role'] = $role;// Set the session role variable
                     $authentication_successful = true;
-                    header('Location: ../php_template/index.php');
+                    header('Location: ../index.php');
                     exit();
                 }else {
-                    header('Location:../php_template/loginHtml.php?erreur=1'); // Username or password incorrect
+                    header('Location:../loginHtml.php?erreur=1'); // Username or password incorrect
                     exit();
                   }
             }
           } else {
-            header('Location: ../php_template/loginHtml.php?erreur=2'); // One or more fields are empty
+            header('Location: ../loginHtml.php?erreur=2'); // One or more fields are empty
             exit();
           }
     }
