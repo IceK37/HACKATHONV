@@ -12,7 +12,6 @@ body {
     padding-right: 20px;
 }
 
-
 .container-home {
     background-image: url("background.jpeg");
     background-repeat: no-repeat;
@@ -45,7 +44,7 @@ header {
 
 .menu-container {
     display: flex; 
-    justify-content: center; /
+    justify-content: center; 
 }
 
 header h1 {
@@ -154,4 +153,53 @@ footer {
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles pour le menu d'administration */
+.admin-menu {
+    background-color: #333;
+    color: #fff;
+    width: 200px;
+    float: left;
+    height: 100vh; /* Définissez la hauteur à 100vh pour occuper toute la hauteur du conteneur */
+    width: 200px; /* Vous pouvez ajuster la largeur du menu à votre convenance */
+    float: left;    }
+
+.admin-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-menu ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #444;
+}
+
+.admin-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+/* Styles pour le contenu d'administration */
+.admin-content {
+    margin-left: 220px; /* Ajustez la marge gauche en fonction de la largeur du menu */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.admin-section {
+    margin-bottom: 20px;
+}
+
+.admin-section h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.admin-section p {
+    margin: 0;
+    color: #666;
 }
