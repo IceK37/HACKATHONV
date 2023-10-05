@@ -17,7 +17,7 @@
                 if (isset($_SESSION['username'])) {
                     if (isset($_SESSION['role'])) {
                         $userRole = $_SESSION['role'];
-                        if ($userRole == 'dev') {
+                        if ($userRole == 'developpement') {
                             echo '<li><a href="../dev.php">Pôle Dev</a></li>';
                         }
                         if ($userRole == 'communication') {
