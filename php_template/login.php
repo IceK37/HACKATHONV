@@ -52,7 +52,7 @@ Class Login
             }
             if ($authentication_successful) {
               echo "Authentification réussie. Les informations correspondent.";
-              header('Location: ../index.php');
+              //header('Location: ../index.php');
                     exit();
           } else {
               echo "Échec de l'authentification. Les informations ne correspondent pas.";
