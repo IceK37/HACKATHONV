@@ -46,7 +46,8 @@ Class Login
                 $username_api = $entry['Name'];
                 $password_api = $entry['password'];
                 $role = $entry['role'];
-                
+                echo $username_api;
+                echo $password_api;
                 if ($username === $username_api && password_verify($password, $password_api)) {
                     $_SESSION['username'] = $username;// Set the session username variable
                     $_SESSION['role'] = $role;// Set the session role variable
@@ -54,12 +55,12 @@ Class Login
                     header('Location: ../index.php');
                     exit();
                 }else {
-                    header('Location:../loginHtml.php?erreur=1'); // Username or password incorrect
+                    //header('Location:../loginHtml.php?erreur=1'); // Username or password incorrect
                     exit();
                   }
             }
           } else {
-            header('Location: ../loginHtml.php?erreur=2'); // One or more fields are empty
+            //header('Location: ../loginHtml.php?erreur=2'); // One or more fields are empty
             exit();
           }
     }
