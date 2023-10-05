@@ -36,11 +36,7 @@ Class Login
         $authentication_successful = false;
 
         
-        if ($authentication_successful) {
-            echo "Authentification réussie. Les informations correspondent.";
-        } else {
-            echo "Échec de l'authentification. Les informations ne correspondent pas.";
-        }
+        
           if ($username !== "" && $password !== "") {
             foreach ($data as $entry) {
                 $username_api = $entry['Name'];
@@ -52,15 +48,18 @@ Class Login
                     $_SESSION['username'] = $username;// Set the session username variable
                     $_SESSION['role'] = $role;// Set the session role variable
                     $authentication_successful = true;
-                    header('Location: ../index.php');
-                    exit();
-                }else {
-                    //header('Location:../loginHtml.php?erreur=1'); // Username or password incorrect
-                    exit();
-                  }
+                }
             }
+            if ($authentication_successful) {
+              echo "Authentification réussie. Les informations correspondent.";
+              header('Location: ../index.php');
+                    exit();
           } else {
-            //header('Location: ../loginHtml.php?erreur=2'); // One or more fields are empty
+              echo "Échec de l'authentification. Les informations ne correspondent pas.";
+              header('Location:../loginHtml.php?erreur=1'); // Username or password incorrect
+          }
+          } else {
+            header('Location: ../loginHtml.php?erreur=2'); // One or more fields are empty
             exit();
           }
     }
