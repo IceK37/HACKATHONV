@@ -25,7 +25,7 @@
                             echo '<li><a href="../Communication.php">Pôle Communication</a></li>';
                         }
                         echo "<user>
-                        <a href=\"../function/logout.php\">
+                        <a href=\"..logout.php\">
                         <img src=\"https://cdn-icons-png.flaticon.com/512/992/992680.png\">
                         </a>
                         </user>";
