@@ -13,9 +13,7 @@
             <h1>YPN Portal</h1>
             <ul>
             <?php
-                if (session_status() == PHP_SESSION_NONE) {
                     session_start();
-                }
                 if (isset($_SESSION['username'])) {
                     if (isset($_SESSION['role'])) {
                         $userRole = $_SESSION['role'];
