@@ -203,3 +203,40 @@ footer {
     margin: 0;
     color: #666;
 }
+
+.login-register-container {
+    height: 92.4%;
+    background-image: url("background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: back;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    position: relative;
+  }
+  .login-register-form {
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 60px;
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+  .login-register-input {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    padding: 6px 10px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+  .login-register-button {
+    background-color: #da70d6;
+    font-weight: bold;
+    cursor: pointer;
+  }
