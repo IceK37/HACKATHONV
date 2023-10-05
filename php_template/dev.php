@@ -8,6 +8,25 @@ if (isset($_GET['page'])) {
     $page = 'acces-bd'; 
 }
 
+if (!isset($_SESSION['username'])) {
+    header('Location: ../php_template/loginHtml.php');
+    exit();
+}
+
+if (isset($_SESSION['role'])) {
+    $userRole = $_SESSION['role'];
+
+    $allowedRoles = ['developpement'];
+
+    if (!in_array($userRole, $allowedRoles)) {
+        header('Location: ../php_template/index.php'); 
+        exit();
+    }
+} else {
+    header('Location: ../php_template/index.php');
+    exit();
+}
+
 function afficherContenu($page) {
     switch ($page) {
         case 'acces-bd':
