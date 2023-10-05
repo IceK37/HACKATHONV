@@ -30,8 +30,8 @@
                     }
                 }else{
                     echo 
-                    "<li><a href=\"../index.php\">Accueil</a></li>
-                    <li><a href=\"../loginHtml.php\">Login</a></li>
+                    "<li><a href=\"../loginHtml.php\">Login</a></li>
+                    <li><a href=\"../index.php\">Accueil</a></li>
                     <li><a href=\"../propos.php\">À propos</a></li>";
                 }
                 ?>
