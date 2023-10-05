@@ -9,7 +9,7 @@ if (isset($_GET['page'])) {
 }
 
 if (!isset($_SESSION['username'])) {
-    header('Location: ../php_template/loginHtml.php');
+    header('Location: ../loginHtml.php');
     exit();
 }
 
@@ -19,11 +19,11 @@ if (isset($_SESSION['role'])) {
     $allowedRoles = ['developpement'];
 
     if (!in_array($userRole, $allowedRoles)) {
-        header('Location: ../php_template/index.php'); 
+        header('Location: ../index.php'); 
         exit();
     }
 } else {
-    header('Location: ../php_template/index.php');
+    header('Location: ../index.php');
     exit();
 }
 

@@ -20,17 +20,17 @@
                     if (isset($_SESSION['role'])) {
                         $userRole = $_SESSION['role'];
                         if ($userRole == 'dev') {
-                            echo '<li><a href="../php_template/dev.php">Pôle Dev</a></li>';
+                            echo '<li><a href="../dev.php">Pôle Dev</a></li>';
                         }
                         if ($userRole == 'communication') {
-                            echo '<li><a href="../php_template/Communication.php">Pôle Communication</a></li>';
+                            echo '<li><a href="../Communication.php">Pôle Communication</a></li>';
                         }
                     }
                 }
                 ?>
-                <li><a href="../php_template/index.php">Accueil</a></li>
-                <li><a href="../php_template/loginHtml.php">Login</a></li>
-                <li><a href="../php_template/propos.php">À propos</a></li>
+                <li><a href="../index.php">Accueil</a></li>
+                <li><a href="../loginHtml.php">Login</a></li>
+                <li><a href="../propos.php">À propos</a></li>
             </ul>
         </div>
     </nav>
