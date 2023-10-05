@@ -42,8 +42,6 @@ Class Login
                 $username_api = $entry['Name'];
                 $password_api = $entry['password'];
                 $role = $entry['role'];
-                echo $username_api;
-                echo $password_api;
                 if ($username === $username_api && password_verify($password, $password_api)) {
                     $_SESSION['username'] = $username;// Set the session username variable
                     $_SESSION['role'] = $role;// Set the session role variable
@@ -51,8 +49,10 @@ Class Login
                 }
             }
             if ($authentication_successful) {
-              echo "Authentification réussie. Les informations correspondent.";
-              //header('Location: ../index.php');
+              //echo "Authentification réussie. Les informations correspondent.";
+              echo $_SESSION['username'];
+              echo $_SESSION['role'];
+              header('Location: ../index.php');
                     exit();
           } else {
               echo "Échec de l'authentification. Les informations ne correspondent pas.";

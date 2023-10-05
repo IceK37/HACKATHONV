@@ -9,6 +9,7 @@
 
 <body>
     <?php 
+    session_start();
     include "header.php" ?>
     <section class="login-register-container">
 
